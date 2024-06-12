@@ -1,0 +1,38 @@
+.boardRow {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+  cursor: pointer;
+  position: relative;
+}
+
+.row {
+  margin-top: 100px;
+}
+
+.square0,
+.square1,
+.square3,
+.square4,
+.square6,
+.square7 {
+  border-right: 10px solid #0074a6;
+}
+
+.square0,
+.square1,
+.square2,
+.square3,
+.square4,
+.square5 {
+  border-bottom: 10px solid #0074a6;
+}
+
+.resetBtn {
+  margin-top: 50px;
+  padding: 10px;
+  background-color: #0074a6;
+  color: white;
+  width: 50%;
+  font-size: 30px;
+}
