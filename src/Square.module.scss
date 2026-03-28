@@ -1,0 +1,55 @@
+.square {
+  border-radius: 16px;
+  width: 140px;
+  height: 140px;
+  box-shadow: inset 0 -8px 0 0 #10212a;
+  background: var(--color-slate-800);
+  border: none;
+}
+
+.winnerX {
+  background-image: url(./assets/winnerX.svg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+  background-color: var(--color-teal-400);
+  box-shadow: inset 0 -8px 0 0 #118c87;
+}
+
+.winnerO {
+  background-image: url(./assets/winnerO.svg) !important;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+  box-shadow: inset 0 -8px 0 0 #cc8b13;
+  background-color: var(--color-amber-400);
+}
+
+.isX {
+  background-image: url(./assets/xBold.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+}
+
+.isO {
+  background-image: url(./assets/oBold.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+}
+
+.xTurn:hover {
+  background-image: url(./assets/xTurn.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+}
+
+.oTurn:hover {
+  background-image: url(./assets/oTurn.svg);
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 64px;
+}
