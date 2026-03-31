@@ -3,7 +3,7 @@ import ResultModal from "../ResultModal/ResultModal";
 import useTicTacToe from "../../hooks/useTicTacToe";
 
 import { gameLogic } from "../../utils/gameLogic";
-import BoardRow from "../../BoardRow";
+import BoardRow from "../BoardRow/BoardRow";
 import styles from "./Board.module.scss";
 import ScoreBoard from "../ScoreBoard/ScoreBoard";
 import BoardHeader from "../BoardHeader/BoardHeader";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Board from "./components/Board/Board";
 import StartScreen from "./components/StartScreen/StartScreen";
 
@@ -7,7 +7,7 @@ function App() {
   const [playerOneMark, setPlayerOneMark] = useState("X");
   const [gameMode, setGameMode] = useState("PLAYER");
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route
           path="/"
@@ -25,7 +25,7 @@ function App() {
         />
         <Route path="*" element={`404`} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
