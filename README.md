@@ -1,16 +1,75 @@
-# React + Vite
+# 🎮 Tic Tac Toe
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A browser-based Tic Tac Toe game with multiplayer and single-player (vs CPU) modes.
 
-Currently, two official plugins are available:
+![React](https://img.shields.io/badge/React-19-blue)
+![Vite](https://img.shields.io/badge/Vite-8-purple)
+![SCSS Modules](https://img.shields.io/badge/SCSS-Modules-pink)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- **Two game modes** — PvP (two players) and PvE (against the computer)
+- **Side selection** — choose to play as X or O before the game starts
+- **Responsive layout** — optimized for mobile (≤510px) and desktop screens
+- **Hover states** — interactive hints when hovering over buttons and empty squares
+- **Winning line highlight** — winning squares are visually highlighted
+- **Score tracking** — tracks X wins, O wins, and draws
+- **State persistence** — game score and board state are saved in `localStorage`
+- **Smooth animations** — sliding toggle for player selection
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+| Technology | Purpose |
+|---|---|
+| **React 19** | UI library |
+| **React Router 7** | Routing (start screen ↔ game) |
+| **Vite 8** | Bundler and dev server |
+| **SCSS Modules** | Component styling |
+| **localStorage** | Game state persistence |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Board/            # Game board
+│   ├── BoardHeader/      # Header with logo, turn indicator, and reset button
+│   ├── ResultModal/      # Result modal (win / draw)
+│   ├── ScoreBoard/       # Score table
+│   ├── Square/           # Game board cell
+│   ├── StartScreen/      # Start screen with player and mode selection
+│   └── icons/            # SVG icons as React components
+├── hooks/
+│   └── useTicTacToe.js   # Core game logic (state, moves, scoring, CPU)
+├── utils/
+│   └── gameLogic.js      # Winner detection
+├── styles/               # Global styles, fonts, CSS variables, normalize
+├── assets/               # SVG assets
+├── App.jsx               # Routing
+├── BoardRow.jsx          # Row of 3 squares
+└── main.jsx              # Entry point
+```
+
+## 🚀 Getting Started
+
+```bash
+# Clone the repository
+git clone <url>
+cd TicTacToe
+
+# Install dependencies
+npm install
+
+# Start the dev server
+npm run dev
+```
+
+The app will be available at `http://localhost:5173`
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+The production build will be output to the `dist/` folder.

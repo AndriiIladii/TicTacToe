@@ -1,0 +1,25 @@
+.boardWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+
+.boardRow {
+  display: flex;
+  column-gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-slate-800);
+  height: 16.5625rem;
+}

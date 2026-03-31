@@ -1,4 +1,4 @@
-import Square from "./Square";
+import Square from "./components/Square/Square";
 
 function BoardRow({ squares, handleClick, rowOffset, xIsNext, isWinner }) {
   return (
