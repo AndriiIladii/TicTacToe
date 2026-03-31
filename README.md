@@ -6,6 +6,8 @@ A browser-based Tic Tac Toe game with multiplayer and single-player (vs CPU) mod
 ![Vite](https://img.shields.io/badge/Vite-8-purple)
 ![SCSS Modules](https://img.shields.io/badge/SCSS-Modules-pink)
 
+🔗 **Live Demo**: [https://andriiiladii.github.io/TicTacToe/](https://andriiiladii.github.io/TicTacToe/)
+
 ## ✨ Features
 
 - **Two game modes** — PvP (two players) and PvE (against the computer)
